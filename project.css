@@ -6,20 +6,17 @@
 }
 body{
     background-color: white;
+    background-image: url(images/slider.jpg);
     height:100%;
     width:100%;
     overflow-x: hidden;
-   
+    backdrop-filter: blur(5px);
 }
 #header{
-    height:500px;
+height:100px;
 width: 100%;
 background-color: #3f055e;
- background-image: url(images/slider.jpg); 
- background-repeat: no-repeat;
- background-position: center;
- background-size: cover;
- backdrop-filter: blur(5px);
+position: fixed;
 }
 #navbar a{
     color: rgb(35, 35, 193);
@@ -31,7 +28,6 @@ background-color: #3f055e;
     display:inline-block;
     background-color: rgb(255, 157, 0);
    float:left; 
-   position: fixed;
    text-align: center;
    height:40px;
    width: 100%;
@@ -94,114 +90,71 @@ p2{
     font-family: 'serif';
     font-size: 45px;
 }
-#p1, #p2, #p3{
-    border-radius:10%;
-    height:300px;
-    width:32%;
-    display: inline-block;
-    margin:5px;
+.first_row{
+    height: 300px;
+    display:flex;
+    margin-top: 100px;
 }
-#p1{
-    background-image: url(carrots-673184_640.jpg);
-
+.first_row img{
+width: 33%;
+border-radius: 10px;
+margin: 5px;
+padding: 10px;
+} 
+.second_row{
+    height: 300px;
+    display: flex;
 }
-#p2{
-    background-image: url(peppers-467270_640.jpg);
-    background-size: cover;
+.second_row img{
+    width:25%;
+    border-radius: 10px;
+    gap: 10px;
+    margin: 5px;
+    padding:10px;
+    } 
+.third_row{
+    height: 300px;
+    display:flex;
 }
-#p3{
-    background-image: url(onions-1397037_640.jpg);
-}
-#p4, #p5, #p6, #p7{
-    border-radius:10%;
-    height:300px;
-    width:23%;
-    display: inline-block;
-    margin:5px;
-}
-#p4{
-    background-image: url(potato.jpg);
-    background-size: cover;
-}
-#p5{
-    background-image: url(tomatoes-7433786_640.jpg);
-    background-size: cover;
-}
-#p6{
-    background-image: url(mushroom.jpg);
-    background-size: cover;
-}
-#p7{
-    background-image: url(cucumbers-849269_640.jpg);
-    background-size: cover;
-}
-#p8, #p9, #p10, #p11{
-    border-radius:10%;
-    height:300px;
-    width:23%;
-    display: inline-block;
-    margin:5px;
-}
-#p8{
-    background-image: url(broccoli-1238250_1280.jpg);
-    background-size: cover;
-}
-#p9{
-    background-image: url(bush-beans-3702999_640.jpg);
-    background-size: cover;
-}
-#p10{
-    background-image: url(red\ chilli.jpg);
-    background-size: cover;
-}
-#p11{
-    background-image: url(peas.jpg);
-    background-size: cover;
-}
+.third_row img{
+    width:25%;
+    border-radius: 10px;
+    margin: 5px;
+    padding:10px;
+    } 
 /*---------------------------------categories-------------------*/
-h2{
-    text-align: center;
+#text2{
+    padding-top:90px;
+    text-align:center;
+    color:maroon;
     font-family: 'serif';
-    font-size: 45px;
+    font-size: 100px;
 }
-#fresh,#leafy,#beans{
-    border-radius:10%;
-    height:300px;
-    width:32%;
-    display: inline-block;
-    margin:5px;
+
+.f1_row{
+    height: 300px;
+    margin-top: 50px;
+    display:flex;
 }
-#fresh{
-background-image: url(BottleGourd.jpg);
-background-size: cover;
+.f1_row img{
+    width:33%;
+    gap: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    padding:10px;
+    } 
+    
+.f2_row{
+    height: 300px;
+    display:flex;
 }
-#leafy{
-    background-image: url(spinach.jpg);
-    background-size: cover;
-}
-#beans{
-    background-image: url(legumes-beans-assortment-healthy-vegan-protein-food.jpg);
-    background-size: cover;
-}
-#dried,#dairy,#pulses{
-    border-radius:10%;
-    height:300px;
-    width:32%;
-    display: inline-block;
-    margin:5px;
-}
-#dried{
-background-image: url(grundruk.jpg);
-background-size: cover;
-}
-#dairy{
-    background-image: url(pANEER.jpg);
-    background-size: cover;
-}
-#pulses{
-    background-image: url(pulses.jpg);
-    background-size: cover;
-}
+.f2_row img{
+    width:33%;
+    gap:10px;
+    border-radius: 10px;
+    margin: 5px;
+    padding:10px;
+    } 
 /*---------------------------------products-------------------*/
 .container{
     margin:15px;
